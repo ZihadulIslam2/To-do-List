@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="bg-black min-h-screen flex flex-col">
+        <div class="mx-10 my-10 bg-white min-h-[100vh] rounded-lg">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center border-b-2 border-black">To-Do List</h1>
+            <div class="p-4">
+            <div class="flex flex-col items-start">
+                <input type="text" id="listText-el" class="border-2 border-black px-1 py-1 w-full max-w-[32rem] mx-auto block">
+                <button id="Save-btn" class="mt-2 px-[18px] py-[8px] border-1 bg-black text-white font-black inline-block mx-auto">Save Task</button>
+                <button id="clear-btn" class="mt-2 px-[18px] py-[8px] border-1 bg-black text-white font-black inline-block mx-auto">Clear Tasks</button>
+
+            </div>
+
+                <ul id="ulEl" class="max-w-lg mx-auto mt-4">
+
+                    <li class="border-b-2 border-black px-4 pt-10"></li>
+                    <!-- <li class="border-b-2 border-black px-4 pt-1 italic">my name is zihadul islam tusher</li> -->
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
